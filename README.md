@@ -21,6 +21,7 @@ It runs through a specified wordlist of common XSS vulnerabilities, and alerts w
 ## Usage
 
 ``` ./easyxss.go -u "http://example.com" -p "PATH TO WORDLIST"```
+**must include http/https block or it wont parse!!**
 
 # Socials:
 
