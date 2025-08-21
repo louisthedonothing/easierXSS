@@ -166,8 +166,8 @@ func main() {
 
 	payloadFile := *payloadFlag
 	if payloadFile == "" {
-		payloadFile = "payload.txt"
-		fmt.Println("No payload file specified, using default: payload.txt")
+		payloadFile = "payloads.txt"
+		fmt.Println("No payload file specified, using default: payloads.txt")
 	}
 
 	fmt.Println("Target:", *urlFlag)
