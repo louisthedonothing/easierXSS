@@ -154,7 +154,7 @@ func loadPayloads(path string) ([]string, error) {
 }
 
 func main() {
-	urlFlag := flag.String("u", "", "Target URL")
+	urlFlag := flag.String("u", "", "Target URL: MUST include https:// or it will not parse") //This fucking parsing issue took me so long to fix
 	payloadFlag := flag.String("p", "", "Path to payload file")
 	flag.Parse()
 
@@ -164,7 +164,7 @@ func main() {
 		return
 	}
 
-	payloadFile := *payloadFlag
+	payloadFile := *payloadFlag //not super important it just defaults to a huge list :p 
 	if payloadFile == "" {
 		payloadFile = "payloads.txt"
 		fmt.Println("No payload file specified, using default: payloads.txt")
